@@ -57,9 +57,67 @@
     </div>
       
 
+    <!-- разделы -->
+    <div class="container margin-top-30">
+        <!-- фильтры -->
 
-    <!-- чистое поле -->
-    <div class="container margin-top-150"></div>
+        <div class="col col-xs-3">
+          
+          <div class="row">
+              <button class="none-hover none-focus filter-btn material-input btn btn-default dropdown-toggle" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                Тип работ
+                <!--<span class="caret"></span>--> <!-- TODO: каретку по правому краю-->
+              </button>                 
+              <div class="collapse" id="collapseExample">
+                <div>
+                  <ul class="filter-list">
+                    <li><a class="none-hover" href="#">Все типы работ</a></li>
+                    <li><a class="none-hover" href="#">Для струйной цементации</a></li>
+                    <li><a class="none-hover" href="#">Для установки анкеров</a></li>
+                  </ul>
+                </div>                
+              </div>          
+          </div>
+
+        </div>
+          
+        <!-- просто воздух 
+          <div class="col col-xs-1">
+          </div>
+        -->
+
+        <div class="col col-xs-9">
+          <!-- ряды сетки -->
+          <!-- TODO: Данные должны тянуться из базы -->
+          <div class="row">
+            <div class="col col-xs-4">
+              столбец 1
+            </div>
+            
+            <div class="col col-xs-1">
+            </div>
+            
+            <div class="col col-xs-4">
+              столбец 2
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col col-xs-4">
+              столбец 1
+            </div>
+            
+            <div class="col col-xs-1">
+            </div>
+            
+            <div class="col col-xs-4">
+              столбец 2
+            </div>
+          </div>
+
+        </div>
+
+    </div>
 
 
  
@@ -113,6 +171,12 @@
 	
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $('.collapse').collapse('show');
+      });
+    </script>
 
   </body>
 </html>
