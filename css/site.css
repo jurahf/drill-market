@@ -1,0 +1,122 @@
+.header {
+    border-bottom: solid black 1px;
+    border-radius: 0px;
+    height: 100px;
+    padding-top: 20px;
+}
+
+.footer {
+    border-top: solid black 1px;
+    border-radius: 0px;
+    height: 100px;
+    padding-top: 20px;
+}
+
+.header .navbar-brand,
+.footer .navbar-brand {
+    padding-left: 0px;
+}
+
+img {
+    object-fit: cover;
+}
+
+.img-main { /* для большого экрана */
+    height: 560px;
+    width: 100%;
+}
+
+.img-section { /* для большого экрана */
+    height: 460px;
+    width: 100%;
+}
+
+.img-latest,
+.carousel-inner>.item>img.img-latest { /* для большого экрана */
+    height: 300px;
+    width: 400px;
+}
+
+.carousel-control {
+    height: 300px;
+}
+
+.nav-link {
+    color: #181818;
+    line-height: normal;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.yellow-hover:hover,
+.navbar-nav>li>a.yellow-hover:hover {
+    text-decoration: none;
+    color: #181818;
+    background: #FEDB2E;
+    /*box-shadow: inset 500px 0px 0px 0px #FEDB2E;*/
+
+    /*-webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;
+    transition: all 0.7s ease; 
+    */
+}
+
+.separator,
+.navbar-nav>li>a.separator {
+    padding-left: 0px;
+    padding-right: 0px;
+    color: #181818;
+}
+
+.separator:hover,
+.navbar-nav>li>a.separator:hover {
+    background-color: inherit;
+    color: #181818;
+    text-decoration: none;
+}
+
+
+.navbar-nav>li>a {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.material-input {
+    border: none;
+    border-bottom: solid black 1px;
+    border-radius: 0px;
+    box-shadow: none;
+    padding: 0;
+    height: 35.2px; /* ужасный костыль, но только так выравнивается с подчеркиванием глифа*/
+}
+
+
+.padding-right-20 {
+    padding-right: 20px;
+}
+
+.margin-top-30 {
+    margin-top: 30px;
+}
+
+.margin-top-50 {
+    margin-top: 50px;
+}
+
+.margin-top-150 {
+    margin-top: 150px;
+}
+
+
+
+
+
+
