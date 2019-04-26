@@ -233,6 +233,10 @@ ul.product-menu>li>a {
     padding-right: 20px;
 }
 
+.margin-top-10 {
+    margin-top: 10px;
+}
+
 .margin-top-30 {
     margin-top: 30px;
 }
@@ -259,6 +263,15 @@ ul.product-menu>li>a {
 
 
 
+@media (max-width: 1024px) {
+    .more-1024 {
+        display: none;
+    }
+}
 
-
+@media (min-width: 1024px) {
+    .less-1024 {
+        display: none;
+    }
+}
 

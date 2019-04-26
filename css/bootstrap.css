@@ -1604,17 +1604,17 @@ pre code {
 }
 @media (min-width: 640px) {
   .container {
-    width: 640px;
+    width: 626px;
   }
 }
 @media (min-width: 1024px) {
   .container {
-    width: 1024px;
+    width: 1010px;
   }
 }
 @media (min-width: 1280px) {
   .container {
-    width: 1260px;
+    width: 1246px;
   }
 }
 .container-fluid {
