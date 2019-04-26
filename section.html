@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Drill-market</title>
+	  <title>Drill-market</title>
 
     <!-- Bootstrap -->  
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -23,24 +23,24 @@
       <div class="navbar header">
         <div class="row">
             <div class="col col-xs-2">
-              <a href="#">
-                  <img src="./icons/Logo.png" alt="DRILL">
+              <a href="./index.html">
+                <img src="./icons/Logo.png" alt="DRILL">
               </a>      
             </div>
             <div class="col col-xs-8">
 
               <div class="row">
                 <ul class="navbar-nav nav">
-                  <li class=""><a class="nav-link yellow-hover" href="#">Для струйной цементации</a></li>
-                  <li class=""><a class="nav-link yellow-hover" href="#">Для установки анкеров</a></li>
+                  <li class=""><a class="nav-link yellow-hover" href="./section.html?work=1">Для струйной цементации</a></li>
+                  <li class=""><a class="nav-link yellow-hover" href="./section.html?work=2">Для установки анкеров</a></li>
                 </ul>
               </div>
 
               <div class="row">           
                 <ul class="navbar-nav nav">
-                  <li class="nav-item"><a class="nav-link yellow-hover" href="#">Буровые установки</a></li>
-                  <li class="nav-item"><a class="nav-link yellow-hover" href="#">Насосы</a></li>
-                  <li class="nav-item"><a class="nav-link yellow-hover" href="#">Миксерные станции</a></li>
+                  <li class="nav-item"><a class="nav-link yellow-hover" href="./section.html?tool=1">Буровые установки</a></li>
+                  <li class="nav-item"><a class="nav-link yellow-hover" href="./section.html?tool=2">Насосы</a></li>
+                  <li class="nav-item"><a class="nav-link yellow-hover" href="./section.html?tool=3">Миксерные станции</a></li>
                 </ul>                
               </div>
             </div>
@@ -59,65 +59,156 @@
 
     <!-- разделы -->
     <div class="container margin-top-30">
+      <div class="row">
         <!-- фильтры -->
-
         <div class="col col-xs-3">
           
-          <div class="row">
-              <button class="none-hover none-focus filter-btn material-input btn btn-default dropdown-toggle" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          <div class="row margin-top-50 padding-left-10">
+              <button class="none-hover none-focus filter-btn material-input btn btn-default dropdown-toggle" data-toggle="collapse" data-target="#collapseWork" aria-expanded="false" aria-controls="collapseWork">
                 Тип работ
-                <!--<span class="caret"></span>--> <!-- TODO: каретку по правому краю-->
-              </button>                 
-              <div class="collapse" id="collapseExample">
+                <span class="caret"></span>
+              </button>
+              </button>                                  
+              <div class="collapse" id="collapseWork">
                 <div>
                   <ul class="filter-list">
-                    <li><a class="none-hover" href="#">Все типы работ</a></li>
-                    <li><a class="none-hover" href="#">Для струйной цементации</a></li>
-                    <li><a class="none-hover" href="#">Для установки анкеров</a></li>
+                    <li id='work-all'><a class="none-hover none-focus" onclick="filterChanged('all', null);">Все типы работ</a></li>
+                    <li id='work-1'><a class="none-hover none-focus" onclick="filterChanged('1', null);">Для струйной цементации</a></li>
+                    <li id='work-2'><a class="none-hover none-focus" onclick="filterChanged('2', null);">Для установки анкеров</a></li>
                   </ul>
                 </div>                
               </div>          
           </div>
 
+          <div class="row margin-top-50 padding-left-10">
+            <button class="none-hover none-focus filter-btn material-input btn btn-default dropdown-toggle" data-toggle="collapse" data-target="#collapseTool" aria-expanded="false" aria-controls="collapseTool">
+              Тип оборудования
+              <span class="caret"></span>
+            </button>
+            </button>                                  
+            <div class="collapse" id="collapseTool">
+              <div>
+                <ul class="filter-list">
+                  <li id='tool-all'><a class="none-hover none-focus" onclick="filterChanged(null, 'all');">Все типы оборудования</a></li>
+                  <li id='tool-1'><a class="none-hover none-focus" onclick="filterChanged(null, '1');">Буровые установки</a></li>
+                  <li id='tool-2'><a class="none-hover none-focus" onclick="filterChanged(null, '2');">Насосы</a></li>
+                  <li id='tool-3'><a class="none-hover none-focus" onclick="filterChanged(null, '3');">Миксерные станции</a></li>
+                  <li id='tool-4'><a class="none-hover none-focus" onclick="filterChanged(null, '4');">Сопутствующее оборудование</a></li>
+                </ul>
+              </div>                
+            </div>          
+          </div>          
+
         </div>
           
-        <!-- просто воздух 
-          <div class="col col-xs-1">
-          </div>
-        -->
 
         <div class="col col-xs-9">
-          <!-- ряды сетки -->
-          <!-- TODO: Данные должны тянуться из базы -->
-          <div class="row">
-            <div class="col col-xs-4">
-              столбец 1
+          <!-- сетка с товарами -->
+          <!-- TODO: Данные должны тянуться из базы - по параметрам адресной строки-->
+          <div class="row margin-top-50">
+            <div class="col col-xs-6">
+              <a href="#1">
+                <img src="./images/products/Figaro3000.png" class="img-responsive img-product">
+              </a>
+              <div>
+                <a class="nav-link yellow-hover" href="#">Figaro 3000</a>
+              </div>
+              <div>
+                <a class="nav-link yellow-hover" href="#">Для струйной цементации</a>
+                <a class="separator">/</a>
+                <a class="nav-link yellow-hover" href="#">буровые установки</a>
+              </div>
+              <div>
+                <a class="separator" href="#">170 000 €</a>
+              </div>
             </div>
             
-            <div class="col col-xs-1">
-            </div>
-            
-            <div class="col col-xs-4">
-              столбец 2
+            <div class="col col-xs-6">
+              <div class="pull-right">
+                <a href="#1">
+                  <img src="./images/products/Figaro1000.png" class="img-responsive img-product">
+                </a>
+                <div>
+                  <a class="nav-link yellow-hover" href="#">Figaro 1000</a>
+                </div>
+                <div>
+                  <a class="nav-link yellow-hover" href="#">Для струйной цементации</a>
+                  <a class="separator">/</a>
+                  <a class="nav-link yellow-hover" href="#">буровые установки</a>
+                </div>
+                <div>
+                  <a class="separator" href="#">120 000 €</a>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="row">
-            <div class="col col-xs-4">
-              столбец 1
+          <!-- еще ряд -->
+          <div class="row margin-top-100">
+            <div class="col col-xs-6">
+              <a href="#1">
+                <img src="./images/products/Figaro400.png" class="img-responsive img-product">
+              </a>
+              <div>
+                <a class="nav-link yellow-hover" href="#">Figaro 400</a>
+              </div>
+              <div>
+                <a class="nav-link yellow-hover" href="#">Для струйной цементации</a>
+                <a class="separator">/</a>
+                <a class="nav-link yellow-hover" href="#">буровые установки</a>
+              </div>
+              <div>
+                <a class="separator" href="#">3 000 000 руб</a>
+              </div>
             </div>
-            
-            <div class="col col-xs-1">
+
+            <div class="col col-xs-6">
+                <div class="pull-right">
+              <a href="#1">
+                <img src="./images/products/FigaroLafette.png" class="img-responsive img-product">
+              </a>
+              <div>
+                <a class="nav-link yellow-hover" href="#">Figaro Lafette</a>
+              </div>
+              <div>
+                <a class="nav-link yellow-hover" href="#">Для струйной цементации</a>
+                <a class="separator">/</a>
+                <a class="nav-link yellow-hover" href="#">буровые установки</a>
+              </div>
+              <div>
+                <a class="separator" href="#">6 700 000 руб</a>
+              </div>
             </div>
-            
-            <div class="col col-xs-4">
-              столбец 2
             </div>
+          </div>
+
+          <!-- еще ряд -->
+            <div class="row margin-top-100">
+              <div class="col col-xs-6">
+                <a href="#1">
+                  <img src="http://placehold.it/300/8bc34a/000000" class="img-responsive img-product">
+                </a>
+                <div>
+                  <a class="nav-link yellow-hover" href="#">Краткое наименование</a>
+                </div>
+                <div>
+                  <a class="nav-link yellow-hover" href="#">Тип работ</a>
+                  <a class="separator">/</a>
+                  <a class="nav-link yellow-hover" href="#">Тип оборудования</a>
+                </div>
+                <div>
+                  <a class="separator" href="#">ЦЕНА €</a>
+                </div>
+              </div>
+
+              <div class="col col-xs-6">
+                
+              </div>            
           </div>
 
         </div>
-
-    </div>
+      </div>        
+    </div><!-- container -->
 
 
  
@@ -175,7 +266,83 @@
     <script>
       $(document).ready(function(){
         $('.collapse').collapse('show');
+
+        parseParemeters();
+
       });
+
+
+      /// разбирает параметры адресной строки и применяет фильтры
+      function parseParemeters() {
+        var url = new URL(window.location.href);
+        var work = url.searchParams.get("work"); // тип работ
+        var tool = url.searchParams.get("tool"); // тип оборудования
+        
+        var workLi;
+        switch (work) {
+          case '1':
+          workLi = $('#work-1');
+          break;
+          case '2':
+          workLi = $('#work-2');          
+          break;
+          default:
+          workLi = $('#work-all');
+          break;
+        }
+        
+        workLi.addClass('active');
+
+
+        var toolLi;
+        switch (tool) {
+          case '1':
+          toolLi = $('#tool-1');
+          break;
+          case '2':
+          toolLi = $('#tool-2');
+          break;
+          case '3':
+          toolLi = $('#tool-3');
+          break;
+          case '4':
+          toolLi = $('#tool-4');
+          break;
+          default:
+          toolLi = $('#tool-all');
+          break;                                        
+        }
+
+        toolLi.addClass('active');
+      }
+
+      function filterChanged(work, tool) {
+        var baseUrl = window.location.protocol + '//' + window.location.host + window.location.pathname;
+        var url = new URL(window.location.href);
+        var baseWork = url.searchParams.get("work"); // тип работ
+        var baseTool = url.searchParams.get("tool"); // тип оборудования
+
+        var resultWork = 'all';
+        if (baseWork) {
+          resultWork = baseWork;
+        }
+        if (work) {
+          resultWork = work;
+        }
+
+        var resultTool = 'all';
+        if (baseTool) {
+          resultTool = baseTool;
+        }
+        if (tool) {
+          resultTool = tool;
+        }
+
+        window.location = baseUrl + '?work=' + resultWork + '&tool=' + resultTool;
+      }
+
+
+
     </script>
 
   </body>
