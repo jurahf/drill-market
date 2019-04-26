@@ -4,12 +4,19 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 @font-face {
-  font-family: 'PTRootUIWebRegular';
+  font-family: 'PTRootUI';
   font-style: normal;
   font-weight: normal;
 
   src: url('../fonts/PT%20Root%20UI_Regular/PT%20Root%20UI_Regular.eot');
   src: url('../fonts/PT%20Root%20UI_Regular/PT%20Root%20UI_Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/PT%20Root%20UI_Regular/PT%20Root%20UI_Regular.woff2') format('woff2'), url('../fonts/PT%20Root%20UI_Regular/PT%20Root%20UI_Regular.woff') format('woff'), url('../fonts/PT%20Root%20UI_Regular/PT%20Root%20UI_Regular.ttf') format('truetype'), url('../fonts/PT%20Root%20UI_Regular/PT%20Root%20UI_Regular.svg#PTRootUIWeb-Regular') format('svg');
+}
+@font-face {
+  font-family: 'PTRootUI';
+  font-weight: bold;
+
+  src: url('../fonts/PT%20Root%20UI_Bold/PT%20Root%20UI_Bold.eot');
+  src: url('../fonts/PT%20Root%20UI_Bold/PT%20Root%20UI_Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/PT%20Root%20UI_Bold/PT%20Root%20UI_Bold.woff2') format('woff2'), url('../fonts/PT%20Root%20UI_Bold/PT%20Root%20UI_Bold.woff') format('woff'), url('../fonts/PT%20Root%20UI_Bold/PT%20Root%20UI_Bold.ttf') format('truetype'), url('../fonts/PT%20Root%20UI_Bold/PT%20Root%20UI_Bold.svg#PTRootUIWeb-Bold') format('svg');
 }
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
@@ -1090,7 +1097,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "PTRootUIWebRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "PTRootUI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #181818;
@@ -5981,7 +5988,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "PTRootUIWebRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "PTRootUI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: normal;
@@ -6100,7 +6107,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "PTRootUIWebRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "PTRootUI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: normal;

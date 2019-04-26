@@ -4,12 +4,19 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 @font-face {
-  font-family: 'PTRootUIWebRegular';
+  font-family: 'PTRootUI';
   font-style: normal;
   font-weight: normal;
 
   src: url('../fonts/PT%20Root%20UI_Regular/PT%20Root%20UI_Regular.eot');
   src: url('../fonts/PT%20Root%20UI_Regular/PT%20Root%20UI_Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/PT%20Root%20UI_Regular/PT%20Root%20UI_Regular.woff2') format('woff2'), url('../fonts/PT%20Root%20UI_Regular/PT%20Root%20UI_Regular.woff') format('woff'), url('../fonts/PT%20Root%20UI_Regular/PT%20Root%20UI_Regular.ttf') format('truetype'), url('../fonts/PT%20Root%20UI_Regular/PT%20Root%20UI_Regular.svg#PTRootUIWeb-Regular') format('svg');
+}
+@font-face {
+  font-family: 'PTRootUI';
+  font-weight: bold;
+
+  src: url('../fonts/PT%20Root%20UI_Bold/PT%20Root%20UI_Bold.eot');
+  src: url('../fonts/PT%20Root%20UI_Bold/PT%20Root%20UI_Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/PT%20Root%20UI_Bold/PT%20Root%20UI_Bold.woff2') format('woff2'), url('../fonts/PT%20Root%20UI_Bold/PT%20Root%20UI_Bold.woff') format('woff'), url('../fonts/PT%20Root%20UI_Bold/PT%20Root%20UI_Bold.ttf') format('truetype'), url('../fonts/PT%20Root%20UI_Bold/PT%20Root%20UI_Bold.svg#PTRootUIWeb-Bold') format('svg');
 }
 .btn-default,
 .btn-primary,
