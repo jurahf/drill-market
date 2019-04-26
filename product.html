@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <title>Drill-market</title>
+	  <title>Drill market</title>
 
     <!-- Bootstrap -->  
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -58,14 +58,85 @@
       
 
 
-    <!-- чистое поле -->
-    <div class="container margin-top-150"></div>
+    <div class="container margin-top-50">
+      <div class="row">
+
+        <!-- картинки -->
+        <div class="col col-xs-7">
+          <div class="row padding-left-10">
+            <h6 class="nav-link"><img class="product-icon" src="icons/triangle.svg" alt=""></span> Буровые установки</h6>
+          </div>
+
+          <div class="row padding-left-10 margin-top-50">
+            <img class="img-product-details" src="images/products/Figaro3000.png" />
+          </div>
+
+          <div class="row padding-left-10 margin-top-100">
+            <img class="img-product-details" src="images/products/Figaro3000.png" />
+          </div>
+            
+          <div class="row padding-left-10 margin-top-100">
+            <img class="img-product-details" src="images/products/Figaro3000.png" />
+          </div>            
+        </div>
+
+        <!-- описание -->
+        <div class="col col-xs-1"></div>
+
+        <div class="col col-xs-4">
+          <div class="row padding-left-10">
+            <div class="col col-xs-12">
+              <h1 class="product-name">Figaro 3000</h1>
+            </div>
+          </div>
+          <div class="row padding-left-10" style="margin-top: 5px;">   <!-- небольшой костыль -->
+            <div class="col col-xs-12">
+              <h6 class="product-common">Производство: CCT, Россия<br/>
+                Год выпуска: 2018<br/>
+                Наработка: 435 м.ч.<br/>
+                В наличии в г. Перми</h6>
+            </div>
+          </div>
+          
+          <div class="row margin-top-40">
+            <div class="col col-xs-12">
+              <ul class="navbar-nav nav product-menu">
+                <li id="info-type-1" class="active"><a class="nav-link none-hover none-focus" onclick="openInfo('1');">Назначение</a></li>
+                <li><a class="separator">/</a></li>
+                <li id="info-type-2"><a class="nav-link none-hover none-focus" onclick="openInfo('2');">Тех. характеристики</a></li>
+                <li><a class="separator">/</a></li>
+                <li id="info-type-3"><a class="nav-link none-hover none-focus" onclick="openInfo('3');">Габариты и масса</a></li>
+                <li><a class="separator">/</a></li>
+                <li id="info-type-4"><a class="nav-link none-hover none-focus" onclick="openInfo('4');">Особые опции</a></li>              
+              </ul>
+            </div>
+          </div>
+
+          <div class="row margin-top-40">
+            <div class="col col-xs-12">
+              <h6 id='info' class="product-common">— бурение скважин; <br/>
+              — устройство буроинъекционных свай (CFA);<br/>
+              — устройство грунтовых анкеров;<br/>
+              — выполнение работ по технологии струйной цементации грунтов (jet-grouting).</h6>
+            </div>
+          </div>
+
+          <div class="row margin-top-30 product-price">
+            <div class="col col-xs-12">
+              <h4>170 000 €</h4>
+            </div>
+          </div>
+
+        </div> <!-- колонка описания -->
+
+      </div>
+    </div>
 
 
  
 
     <!-- футер -->
-    <div class="container margin-top-30">
+    <div class="container margin-top-100">
       <div class="navbar footer">
         <div class="row">
             <div class="col col-xs-2">
@@ -113,6 +184,38 @@
 	
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+    <script>
+
+      // TODO: это все из базы тянуть
+      function openInfo(infoType) {
+        var text = '';
+        switch (infoType) {   // TODO: магия чисел
+          case '1':
+          text = "— бурение скважин; <br/>— устройство буроинъекционных свай (CFA);<br/>— устройство грунтовых анкеров;<br/>— выполнение работ по технологии струйной цементации грунтов (jet-grouting).";
+          break;
+          case '2':
+          text = "Характеристики офигенные.";
+          break;
+          case '3':
+          text = "Везде пролезет.";
+          break;
+          case '4':
+          text = "";
+          break;
+        }
+
+        $('#info-type-1').removeClass('active');
+        $('#info-type-2').removeClass('active');
+        $('#info-type-3').removeClass('active');
+        $('#info-type-4').removeClass('active');
+        $('#info-type-' + infoType).addClass('active');
+
+        $('#info').html(text);
+      }
+
+
+    </script>
 
   </body>
 </html>
