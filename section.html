@@ -24,7 +24,7 @@
         <div class="row">
             <div class="col col-xs-2">
               <a href="./index.html">
-                <img src="./icons/Logo.png" alt="DRILL">
+                <img class="logo" src="./icons/Logo.svg" alt="DRILL">
               </a>      
             </div>
             <div class="col col-xs-8">
@@ -64,9 +64,9 @@
         <div class="col col-xs-3">
           
           <div class="row margin-top-50 padding-left-10">
-              <button class="none-hover none-focus filter-btn material-input btn btn-default dropdown-toggle" data-toggle="collapse" data-target="#collapseWork" aria-expanded="false" aria-controls="collapseWork">
+              <button class="none-hover none-focus filter-btn material-input btn btn-default dropdown-toggle" onclick="expandChange('work-combo-btn');" data-toggle="collapse" data-target="#collapseWork" aria-expanded="false" aria-controls="collapseWork">
                 Тип работ
-                <span class="caret"></span>
+                <span id="work-combo-btn" class="combo-btn expanded"></span>
               </button>
               </button>                                  
               <div class="collapse" id="collapseWork">
@@ -81,9 +81,9 @@
           </div>
 
           <div class="row margin-top-50 padding-left-10">
-            <button class="none-hover none-focus filter-btn material-input btn btn-default dropdown-toggle" data-toggle="collapse" data-target="#collapseTool" aria-expanded="false" aria-controls="collapseTool">
+            <button class="none-hover none-focus filter-btn material-input btn btn-default dropdown-toggle" onclick="expandChange('tool-combo-btn');" data-toggle="collapse" data-target="#collapseTool" aria-expanded="false" aria-controls="collapseTool">
               Тип оборудования
-              <span class="caret"></span>
+              <span id="tool-combo-btn" class="combo-btn expanded"></span>
             </button>
             </button>                                  
             <div class="collapse" id="collapseTool">
@@ -113,7 +113,7 @@
               <div>
                 <a class="nav-link yellow-hover" href="./product.html?id=1">Figaro 3000</a>
               </div>
-              <div>
+              <div class="with-label">
                 <a class="nav-link yellow-hover" href="#">Для струйной цементации</a>
                 <a class="separator">/</a>
                 <a class="nav-link yellow-hover" href="#">буровые установки</a>
@@ -131,7 +131,7 @@
                 <div>
                   <a class="nav-link yellow-hover" href="./product.html?id=2">Figaro 1000</a>
                 </div>
-                <div>
+                <div class="with-label">
                   <a class="nav-link yellow-hover" href="#">Для струйной цементации</a>
                   <a class="separator">/</a>
                   <a class="nav-link yellow-hover" href="#">буровые установки</a>
@@ -152,7 +152,7 @@
               <div>
                 <a class="nav-link yellow-hover" href="./product.html?id=3">Figaro 400</a>
               </div>
-              <div>
+              <div class="with-label">
                 <a class="nav-link yellow-hover" href="#">Для струйной цементации</a>
                 <a class="separator">/</a>
                 <a class="nav-link yellow-hover" href="#">буровые установки</a>
@@ -170,7 +170,7 @@
               <div>
                 <a class="nav-link yellow-hover" href="./product.html?id=4">Figaro Lafette</a>
               </div>
-              <div>
+              <div class="with-label">
                 <a class="nav-link yellow-hover" href="#">Для струйной цементации</a>
                 <a class="separator">/</a>
                 <a class="nav-link yellow-hover" href="#">буровые установки</a>
@@ -191,7 +191,7 @@
                 <div>
                   <a class="nav-link yellow-hover" href="#">Краткое наименование</a>
                 </div>
-                <div>
+                <div class="with-label">
                   <a class="nav-link yellow-hover" href="#">Тип работ</a>
                   <a class="separator">/</a>
                   <a class="nav-link yellow-hover" href="#">Тип оборудования</a>
@@ -219,7 +219,7 @@
         <div class="row">
             <div class="col col-xs-2">
               <a href="#">
-                  <img src="./icons/Logo.png" alt="DRILL">
+                <img class="logo" src="./icons/Logo.svg" alt="DRILL">
               </a>      
             </div>
 
@@ -232,7 +232,7 @@
                 <div class="input-group">
                   <input type="email" class="form-control material-input" id="input-email" placeholder="EMAIL">
                   <span class="input-group-btn material-input">
-                    <a href="#" class="nav-link btn btn-secondary"><span class="glyphicon glyphicon-arrow-right"></span></a>
+                    <a href="#" class="nav-link btn btn-secondary"><img src="icons/arrow.svg" alt="" /></a>
                   </span>
                 </div>
               </div>
@@ -339,6 +339,16 @@
         }
 
         window.location = baseUrl + '?work=' + resultWork + '&tool=' + resultTool;
+      }
+
+      function expandChange(id) {
+        var element = $('#' + id);
+        if (element.hasClass('expanded')) {
+          element.removeClass('expanded');
+        }
+        else {
+          element.addClass('expanded');
+        }
       }
 
 

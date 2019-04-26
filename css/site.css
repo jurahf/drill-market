@@ -1,3 +1,12 @@
+.logo {
+    height: 53px;
+    width: 127px;
+}
+
+.footer .logo {
+    margin-top: 13px;
+}
+
 .header {
     border-bottom: solid black 1px;
     border-radius: 0px;
@@ -100,6 +109,11 @@ img {
 }
 
 
+.with-label .separator {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .navbar-nav>li>a {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -155,9 +169,16 @@ h1 {
     font-size: 12px;
 }
 
-.filter-btn .caret {
+.filter-btn .combo-btn {
+    width: 10px;
+    height: 8px;
     float: right;
-    margin-top: 8px;
+    margin-top: 6px;
+    background-image: url('../icons/selector\ down.svg');
+}
+
+.filter-btn .combo-btn.expanded {
+    background-image: url('../icons/selector\ up.svg')
 }
 
 h1.product-name {
@@ -222,6 +243,10 @@ ul.product-menu>li>a {
 
 .margin-top-50 {
     margin-top: 50px;
+}
+
+.margin-top-80 {
+    margin-top: 80px;
 }
 
 .margin-top-100 {

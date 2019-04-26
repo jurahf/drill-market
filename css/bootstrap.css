@@ -8,8 +8,8 @@
   font-style: normal;
   font-weight: normal;
 
-  src: url('../fonts/PT%20Root%20UI_Regular/PT%20Root%20UI_Regular.eot');
-  src: url('../fonts/PT%20Root%20UI_Regular/PT%20Root%20UI_Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/PT%20Root%20UI_Regular/PT%20Root%20UI_Regular.woff2') format('woff2'), url('../fonts/PT%20Root%20UI_Regular/PT%20Root%20UI_Regular.woff') format('woff'), url('../fonts/PT%20Root%20UI_Regular/PT%20Root%20UI_Regular.ttf') format('truetype'), url('../fonts/PT%20Root%20UI_Regular/PT%20Root%20UI_Regular.svg#PTRootUIWeb-Regular') format('svg');
+  src: url('../fonts/PT%20Root%20UI_Medium/PT%20Root%20UI_Medium.eot');
+  src: url('../fonts/PT%20Root%20UI_Medium/PT%20Root%20UI_Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/PT%20Root%20UI_Medium/PT%20Root%20UI_Medium.woff2') format('woff2'), url('../fonts/PT%20Root%20UI_Medium/PT%20Root%20UI_Medium.woff') format('woff'), url('../fonts/PT%20Root%20UI_Medium/PT%20Root%20UI_Medium.ttf') format('truetype'), url('../fonts/PT%20Root%20UI_Medium/PT%20Root%20UI_Medium.svg#PTRootUIWeb-Regular') format('svg');
 }
 @font-face {
   font-family: 'PTRootUI';
