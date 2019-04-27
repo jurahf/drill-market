@@ -11,6 +11,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/site.css" rel="stylesheet">
     <link href="css/site-carousel.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">    
 
     <!-- HTML5 Shim and Respond.js for IE8 support of HTML5 elements and media queries -->  
     <!-- Предупреждение: Respond.js не работает при просмотре страницы через файл:// -->  
@@ -178,93 +180,78 @@
         <div class="col col-xs-12 col-md-3 margin-top-80">
           <h1>Недавно добавленные</h1>
         </div>
- 
 
-        <!-- TODO: фотографии, ссылки и описание будет браться из базы -->
         <div class="col col-xs-12 col-md-9">
-          <div class="carousel slide multi-item-carousel" id="theCarousel">
-            <div class="carousel-inner">
-              <div class="item active">
-                <div class="carousel-col">
-                  <a href="#1">
-                    <img src="./images/products/Figaro3000.png" class="img-responsive img-product">
-                  </a>
-                  <div>
-                    <a class="nav-link yellow-hover" href="./product.html?id=1">Figaro 3000</a>
-                  </div>
-                  <div class="with-label">
-                    <a class="nav-link yellow-hover" href="#">Для струйной цементации</a>
-                    <a class="separator">/</a>
-                    <a class="nav-link yellow-hover" href="#">буровые установки</a>
-                  </div>
-                  <div>
-                    <a class="separator" href="#">170 000 €</a>
-                  </div>
+          <section class="variable slider">
+            <div>
+                <a href="#1">
+                  <img src="./images/products/Figaro3000.png" class="img-responsive img-product">
+                </a>
+                <div>
+                  <a class="nav-link yellow-hover" href="./product.html?id=1">Figaro 3000</a>
                 </div>
-              </div>
-              <div class="item">
-                <div class="carousel-col">
-                  <a href="#1">
-                    <img src="./images/products/Figaro1000.png" class="img-responsive img-product">
-                  </a>
-                  <div>
-                    <a class="nav-link yellow-hover" href="./product.html?id=2">Figaro 1000</a>
-                  </div>
-                  <div class="with-label">
-                    <a class="nav-link yellow-hover" href="#">Для струйной цементации</a>
-                    <a class="separator">/</a>
-                    <a class="nav-link yellow-hover" href="#">буровые установки</a>
-                  </div>
-                  <div>
-                    <a class="separator" href="#">120 000 €</a>
-                  </div>                  
+                <div class="with-label">
+                  <a class="nav-link yellow-hover" href="#">Для струйной цементации</a>
+                  <a class="separator">/</a>
+                  <a class="nav-link yellow-hover" href="#">буровые установки</a>
                 </div>
-              </div>
-              <div class="item">
-                <div class="carousel-col">
-                  <a href="#1">
-                    <img src="./images/products/Figaro400.png" class="img-responsive img-product">
-                  </a>
-                  <div>
-                    <a class="nav-link yellow-hover" href="./product.html?id=3">Figaro 400</a>
-                  </div>
-                  <div class="with-label">
-                    <a class="nav-link yellow-hover" href="#">Для струйной цементации</a>
-                    <a class="separator">/</a>
-                    <a class="nav-link yellow-hover" href="#">буровые установки</a>
-                  </div>
-                  <div>
-                    <a class="separator" href="#">3 000 000 руб</a>
-                  </div>                  
+                <div>
+                  <a class="separator" href="#">170 000 €</a>
                 </div>
-              </div>
-              <div class="item">
-                <div class="carousel-col">
-                  <a href="#1">
-                    <img src="http://placehold.it/300/8bc34a/000000" class="img-responsive img-product">
-                  </a>
-                  <div>
-                    <a class="nav-link yellow-hover" href="#">Краткое наименование</a>
-                  </div>
-                  <div class="with-label">
-                    <a class="nav-link yellow-hover" href="#">Тип работ</a>
-                    <a class="separator">/</a>
-                    <a class="nav-link yellow-hover" href="#">Тип оборудования</a>
-                  </div>
-                  <div>
-                    <a class="separator" href="#">ЦЕНА €</a>
-                  </div>                  
-                </div>
-              </div>            
             </div>
-
-            <a class="left carousel-control" href="#theCarousel" data-slide="prev"></a>
-            <a class="right carousel-control" href="#theCarousel" data-slide="next"></a>
-          </div>
+            <div>
+                <a href="#1">
+                  <img src="./images/products/Figaro1000.png" class="img-responsive img-product">
+                </a>
+                <div>
+                  <a class="nav-link yellow-hover" href="./product.html?id=2">Figaro 1000</a>
+                </div>
+                <div class="with-label">
+                  <a class="nav-link yellow-hover" href="#">Для струйной цементации</a>
+                  <a class="separator">/</a>
+                  <a class="nav-link yellow-hover" href="#">буровые установки</a>
+                </div>
+                <div>
+                  <a class="separator" href="#">120 000 €</a>
+                </div>
+            </div>
+            <div>
+                <a href="#1">
+                  <img src="./images/products/Figaro400.png" class="img-responsive img-product">
+                </a>
+                <div>
+                  <a class="nav-link yellow-hover" href="./product.html?id=3">Figaro 400</a>
+                </div>
+                <div class="with-label">
+                  <a class="nav-link yellow-hover" href="#">Для струйной цементации</a>
+                  <a class="separator">/</a>
+                  <a class="nav-link yellow-hover" href="#">буровые установки</a>
+                </div>
+                <div>
+                  <a class="separator" href="#">3 000 000 руб</a>
+                </div>
+            </div>
+            <div>
+                <a href="#1">
+                  <img src="http://placehold.it/300/8bc34a/000000" class="img-responsive img-product">
+                </a>
+                <div>
+                  <a class="nav-link yellow-hover" href="#">Краткое наименование</a>
+                </div>
+                <div class="with-label">
+                  <a class="nav-link yellow-hover" href="#">Тип работ</a>
+                  <a class="separator">/</a>
+                  <a class="nav-link yellow-hover" href="#">Тип оборудования</a>
+                </div>
+                <div>
+                  <a class="separator" href="#">ЦЕНА €</a>
+                </div>                  
+              </div>
+          </section>
         </div>
       </div>
-
     </div>
+    <!----------------------------------------------------------------------------------->
 
 
     <!-- футер -->
@@ -308,6 +295,7 @@
 	
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
     
     <script>
       $(document).ready(function(){
@@ -330,6 +318,15 @@
             }
           });
 
+          $(".variable").slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,            
+            dots: false,
+            arrows: false,
+            infinite: true,
+            variableWidth: true,
+            swipeToSlide: true
+          });
 
       });   
     </script>
