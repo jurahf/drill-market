@@ -68,7 +68,7 @@ img {
 .navbar-nav>li>a.none-focus:focus {
     text-decoration: none;
     color: #181818;
-    background: inherit;
+    background-color: inherit;
 }
 
 .none-hover:hover,
@@ -76,22 +76,45 @@ img {
 .navbar-nav>li>a.none-hover:hover {
     text-decoration: none;
     color: #181818;
-    background: inherit;
+    background-color: inherit;
+}
+
+.yellow-hover,
+.filter-list>li>a.yellow-hover,
+.navbar-nav>li>a.yellow-hover {
+	background-image: url('../images/sprites/sprite-highlight-v3.png');
+	background-position: -5.26316%;
+	background-repeat: no-repeat;
+	background-size: 2000% 1.25em    
 }
 
 .yellow-hover:hover,
 .filter-list>li>a.yellow-hover:hover,
 .navbar-nav>li>a.yellow-hover:hover {
+	-webkit-animation: play .25s steps(20) 1 forwards;
+    animation: play .25s steps(20) 1 forwards; 
+    
     text-decoration: none;
     color: #181818;
-    background: #FEDB2E;
-    /*box-shadow: inset 500px 0px 0px 0px #FEDB2E;*/
+    background-color: inherit;
+}
 
-    /*-webkit-transition: all 0.7s ease;
-    -moz-transition: all 0.7s ease;
-    -o-transition: all 0.7s ease;
-    transition: all 0.7s ease; 
-    */
+@-webkit-keyframes play {
+	0% {
+		background-position: -5.26316%
+	}
+	to {
+		background-position: 100%
+	}
+}
+
+@keyframes play {
+	0% {
+		background-position: -5.26316%
+	}
+	to {
+		background-position: 100%
+	}
 }
 
 .separator,
@@ -159,7 +182,10 @@ h1 {
 }
 
 .filter-list>li.active>a {
-    background-color: #FEDB2E !important;
+	background-image: url('../images/sprites/sprite-highlight-v3.png');
+	background-position: 100%;
+	background-repeat: no-repeat;
+	background-size: 2000% 1.25em;
 }
 
 .filter-btn {
@@ -212,7 +238,10 @@ ul.product-menu>li>a {
 }
 
 .product-menu>li.active>a {
-    background-color: #FEDB2E !important;
+	background-image: url('../images/sprites/sprite-highlight-v3.png');
+	background-position: 100%;
+	background-repeat: no-repeat;
+	background-size: 2000% 1.25em;
 }
 
 .product-price h4 {

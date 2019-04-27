@@ -1,0 +1,12 @@
+.sticky-filter {
+}
+
+@supports ((position: -webkit-sticky) or (position:sticky)) {
+    .sticky-filter {
+        position:-webkit-sticky;
+        position: sticky;
+        top: 0px; /*calc(100% - 300px);*/
+        z-index: 10
+    }
+}
+
