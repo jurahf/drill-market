@@ -80,6 +80,7 @@
 
 
 
+
 .modal.fade:not(.in).left .modal-dialog {
     -webkit-transform: translate3d(-25%, 0, 0);
     transform: translate3d(-25%, 0, 0);

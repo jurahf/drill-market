@@ -26,6 +26,11 @@
     padding-left: 0px;
 }
 
+hr {
+    border-color: black;
+    margin-bottom: 0px;
+}
+
 img {
     object-fit: cover;
 }
@@ -157,6 +162,16 @@ h4>a.yellow-hover {
     padding-top: 0;
     padding-bottom: 0;
 }
+
+.navbar-nav {
+    float: left;
+    margin: 0;
+}
+
+.navbar-nav>li {
+    float: left;
+}
+
 
 h1 {
     font-weight: bold;
@@ -320,10 +335,39 @@ ul.product-menu>li>a {
     margin-bottom: 20px;
 }
 
+.margin-bottom-40 {
+    margin-bottom: 40px;
+}
+
 .margin-bottom-50 {
     margin-bottom: 50px;
 }
 
+.btn {
+    font-size: 12px;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.site-btn-cancel {
+    color: black;
+    background-color: white;
+    border-color: black;
+}
+
+.site-btn-ok {
+    color: white;
+    background-color: black;
+    border-color: black;
+}
+
+.site-btn-cancel:hover {
+    color: black;
+}
+
+.site-btn-ok:hover {
+    color: white;
+}
 
 /******************************************************************************/
 @media (max-width: 1024px) {
@@ -350,13 +394,21 @@ ul.product-menu>li>a {
     }
 }
 
-
-.navbar-nav {
-    float: left;
-    margin: 0;
+@media (min-width: 640px) {
+    .pull-right-more-640 {
+        float: right !important;
+    }
 }
 
-.navbar-nav>li {
-    float: left;
+@media (max-width: 640px) {
+    .margin-top-50-less-640 {
+        margin-top: 50px;
+    }
+
+    .margin-top-30-less-640 {
+        margin-top: 50px;
+    }    
 }
+
+
 
