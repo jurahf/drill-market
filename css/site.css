@@ -63,6 +63,12 @@ img {
     font-size: 12px;
 }
 
+.none {
+    text-decoration: none;
+    color: #181818;
+    background-color: inherit;    
+}
+
 .none-focus:focus,
 .filter-list>li>a.none-focus:focus,
 .navbar-nav>li>a.none-focus:focus {
@@ -85,7 +91,15 @@ img {
 	background-image: url('../images/sprites/sprite-highlight-v3.png');
 	background-position: -5.26316%;
 	background-repeat: no-repeat;
-	background-size: 2000% 1.25em    
+	background-size: 2000% 1.25em;
+}
+
+h1>a.yellow-hover {
+    background-size: 2000% 0.5em;
+}
+
+h4>a.yellow-hover {
+    background-size: 2000% 1em;
 }
 
 .yellow-hover:hover,
@@ -302,8 +316,16 @@ ul.product-menu>li>a {
     margin-top: 150px;
 }
 
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.margin-bottom-50 {
+    margin-bottom: 50px;
+}
 
 
+/******************************************************************************/
 @media (max-width: 1024px) {
     .more-1024 {
         display: none;
@@ -314,5 +336,27 @@ ul.product-menu>li>a {
     .less-1024 {
         display: none;
     }
+}
+
+@media (max-width: 640px) {
+    .more-640 {
+        display: none;
+    }
+}
+
+@media (min-width: 640px) {
+    .less-640 {
+        display: none;
+    }
+}
+
+
+.navbar-nav {
+    float: left;
+    margin: 0;
+}
+
+.navbar-nav>li {
+    float: left;
 }
 

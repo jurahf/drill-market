@@ -10,9 +10,9 @@
     <!-- Bootstrap -->  
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/site.css" rel="stylesheet">
-    <link href="css/site-carousel.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/slick.css">
-    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">    
+    <link rel="stylesheet" type="text/css" href="css/slick.css">    <!-- карусель -->
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">   
+    <link rel="stylesheet" type="text/css" href="css/modal-slider.css"> <!-- для модального меню -->
 
     <!-- HTML5 Shim and Respond.js for IE8 support of HTML5 elements and media queries -->  
     <!-- Предупреждение: Respond.js не работает при просмотре страницы через файл:// -->  
@@ -50,13 +50,14 @@
               </div>
             </div>
 
-            <div class="col col-xs-4 less-1024 text-center">
+            <!-- кнопка меню - для маленького экрана -->
+            <div class="col col-xs-offset-7 col-xs-1 col-sm-offset-0 col-sm-4 less-1024 text-center">
               <div class="row margin-top-10">
-                <a href="#"><img src="./icons/burger.svg" alt="Menu" /></a>
+                <a data-toggle="modal" data-target="#myModal"><img src="./icons/burger.svg" alt="Menu" /></a>
               </div>
             </div>         
 
-            <div class="col col-xs-4 col-md-2 text-right padding-right-20">
+            <div class="col col-xs-4 col-md-2 text-right padding-right-20 more-640">
               <div class="row">
                 <h6>+7 495 226-18-37</h6>
               </div>
@@ -65,6 +66,15 @@
               </div>
             </div>
         </div>
+      </div>
+
+      <div class="row less-640">
+        <div class="col col-xs-6">
+          <h6 class="nav-link">info@drill-market.ru</h6>
+        </div>
+        <div class="col col-xs-6 text-right">
+          <h6>+7 495 226-18-37</h6>
+        </div>        
       </div>
     </div>
       
@@ -112,20 +122,18 @@
                   <li><a class="separator">/</a></li>
                   <li class=""><a class="nav-link yellow-hover" href="./section.html?work=1&tool=1">Буровые установки</a></li>
                   <li><a class="separator">/</a></li>
+                  <br class="less-640" />
                   <li class="nav-item"><a class="nav-link yellow-hover" href="./section.html?work=1&tool=2">Насосы</a></li>
+                  <li><a class="separator">/</a></li>
+                  <br class="more-640" />
+                  <li class="nav-item"><a class="nav-link yellow-hover" href="./section.html?work=1&tool=3">Миксерные станции</a></li>
+                  <li><a class="separator">/</a></li>
+                  <br class="less-640" />
+                  <li class="nav-item"><a class="nav-link yellow-hover" href="./section.html?work=1&tool=4">Сопутствующее оборудование</a></li>
                 </ul>
               </div>                
             </div>
               
-            <div class="row"> 
-              <div class="col col-xs-12 padding-left-0">          
-                <ul class="navbar-nav nav">
-                  <li class="nav-item"><a class="nav-link yellow-hover" href="./section.html?work=1&tool=3">Миксерные станции</a></li>
-                  <li><a class="separator">/</a></li>
-                  <li class="nav-item"><a class="nav-link yellow-hover" href="./section.html?work=1&tool=4">Сопутствующее оборудование</a></li>
-                </ul>
-              </div>               
-            </div>
           </div>
           
           <!-- между разделами - для маленьких экранов нужен отступ по высоте -->
@@ -152,20 +160,18 @@
                   <li><a class="separator">/</a></li>
                   <li class=""><a class="nav-link yellow-hover" href="./section.html?work=2&tool=1">Буровые установки</a></li>
                   <li><a class="separator">/</a></li>
+                  <br class="less-640" />
                   <li class="nav-item"><a class="nav-link yellow-hover" href="./section.html?work=2&tool=2">Насосы</a></li>
+                  <li><a class="separator">/</a></li>
+                  <br class="more-640" />
+                  <li class="nav-item"><a class="nav-link yellow-hover" href="./section.html?work=2&tool=3">Миксерные станции</a></li>
+                  <li><a class="separator">/</a></li>
+                  <br class="less-640" />
+                  <li class="nav-item"><a class="nav-link yellow-hover" href="./section.html?work=2&tool=4">Сопутствующее оборудование</a></li>
                 </ul>
               </div>
             </div>
-  
-            <div class="row">
-              <div class="col col-xs-12 padding-left-0">           
-                <ul class="navbar-nav nav">
-                  <li class="nav-item"><a class="nav-link yellow-hover" href="./section.html?work=2&tool=3">Миксерные станции</a></li>
-                  <li><a class="separator">/</a></li>
-                  <li class="nav-item"><a class="nav-link yellow-hover" href="./section.html?work=2&tool=4">Сопутствующее оборудование</a></li>
-                </ul>
-              </div>                
-            </div>              
+            
           </div>
 
         </div>
@@ -263,41 +269,152 @@
     <!-- футер -->
     <div class="container margin-top-100">
       <div class="navbar footer">
-        <div class="row">
-            <div class="col col-xs-4 col-md-2">
-              <a href="#">
-                <img class="logo" src="./icons/Logo.svg" alt="DRILL">
-              </a>     
-            </div>
 
-            <div class="col col-xs-4 col-md-3">
-              <div class="row">
-                <h6 class="nav-link">Подписаться на обновления</h6>
-              </div>
-
-              <div class="row">
-                <div class="input-group">
-                  <input type="email" class="form-control material-input" id="input-email" placeholder="EMAIL">
-                  <span class="input-group-btn material-input">
-                    <a href="#" class="nav-link btn btn-secondary"><img src="icons/arrow.svg" alt="" /></a>
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            <div class="col col-xs-4 col-md-offset-5 col-md-2 text-right padding-right-20">
-              <div class="row">
-                <h6>+7 495 226-18-37</h6>
-              </div>
-              <div class="row">
-                <h6 class="nav-link">info@drill-market.ru</h6>
-              </div>
-            </div>
+        <div class="row less-640 margin-bottom-50">
+          <div class="col col-xs-6">
+            <h6 class="nav-link">info@drill-market.ru</h6>
+          </div>
+          <div class="col col-xs-6 text-right">
+            <h6>+7 495 226-18-37</h6>
+          </div>        
         </div>
+
+        <div class="row">
+          <div class="col col-xs-4 col-md-2 more-640">
+            <a href="#">
+              <img class="logo" src="./icons/Logo.svg" alt="DRILL">
+            </a>     
+          </div>
+
+          <div class="col col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-4 col-md-3">
+            <div class="row">
+              <h6 class="nav-link">Подписаться на обновления</h6>
+            </div>
+
+            <div class="row">
+              <div class="input-group">
+                <input type="email" class="form-control material-input" id="input-email" placeholder="EMAIL">
+                <span class="input-group-btn material-input">
+                  <a href="#" class="nav-link btn btn-secondary"><img src="icons/arrow.svg" alt="" /></a>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col col-xs-4 col-md-offset-5 col-md-2 text-right padding-right-20 more-640">
+            <div class="row">
+              <h6>+7 495 226-18-37</h6>
+            </div>
+            <div class="row">
+              <h6 class="nav-link">info@drill-market.ru</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- эмблема для маленьких экранов -->
+        <div class="row less-640 margin-top-50 margin-bottom-20">
+          <div class="col col-xs-12 text-center">
+            <a href="#">
+              <img class="logo" src="./icons/Logo.svg" alt="DRILL">
+            </a>     
+          </div>
+        </div>
+
       </div>
     </div>
 	
-	
+  
+    <!-- Modal -->
+    <div class="modal left fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          
+          <!-- хедер модального окна -->
+          <div class="container">
+            <div class="row modal-header">
+
+              <div class="col col-xs-6 col-sm-4">
+                <img class="logo" src="./icons/Logo.svg" alt="DRILL">
+              </div>
+
+              <div class="col col-xs-offset-5 col-xs-1 col-sm-offset-0 col-sm-4 text-center">
+                <div class="row margin-top-10">
+                  <a data-direction='left' data-dismiss="modal" aria-label="Close"><img src="icons/close.svg" alt="Close" /></a>
+                </div>
+              </div>
+
+              <div class="col col-sm-4 text-right padding-right-20 more-640">
+                <div class="row">
+                  <h6>+7 495 226-18-37</h6>
+                </div>
+                <div class="row">
+                  <h6 class="nav-link">info@drill-market.ru</h6>
+                </div>
+              </div>              
+
+            </div>
+
+            <div class="row less-640">
+              <div class="col col-xs-6">
+                <h6 class="nav-link">info@drill-market.ru</h6>
+              </div>
+              <div class="col col-xs-6 text-right">
+                <h6>+7 495 226-18-37</h6>
+              </div>        
+            </div>
+          </div>
+
+          <!-- содержимое модального окна -->
+          <div class="container more-640">
+            <div class="row">
+                <h1><a class="none yellow-hover" href="./section.html?work=1">Для струйной цементации</a></h1>
+                <h1 class="margin-top-30"><a class="none yellow-hover" href="./section.html?work=2">Для установки анкеров</a></h1>   
+
+                <h1 class="margin-top-50"><a class="none yellow-hover" href="./section.html?tool=1">Буровые установки</a></h1>
+                <h1 class="margin-top-30"><a class="none yellow-hover" href="./section.html?tool=2">Насосы</a></h1>
+                <h1 class="margin-top-30"><a class="none yellow-hover" href="./section.html?tool=3">Миксерные станции</a></h1>
+            </div>
+          </div>
+
+          <div class="container margin-top-40 less-640">
+            <div class="row">
+              <div class="col col-xs-12">
+                <h4><a class="none yellow-hover" href="./section.html?work=1">Для струйной цементации</a></h4>
+                <h4 class="margin-top-20"><a class="none yellow-hover" href="./section.html?work=2">Для установки анкеров</a></h4>
+
+                <h4 class="margin-top-40"><a class="none yellow-hover" href="./section.html?tool=1">Буровые установки</a></h4>
+                <h4 class="margin-top-20"><a class="none yellow-hover" href="./section.html?tool=2">Насосы</a></h4>
+                <h4 class="margin-top-20"><a class="none yellow-hover" href="./section.html?tool=3">Миксерные станции</a></h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- футер модального окна -->
+          <div class="container">
+            <div class="row site-modal-footer">
+
+                <div class="col col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-6">
+                  <div class="row">
+                    <h6 class="nav-link">Подписаться на обновления</h6>
+                  </div>
+      
+                  <div class="row">
+                    <div class="input-group">
+                      <input type="email" class="form-control material-input" id="input-email" placeholder="EMAIL">
+                      <span class="input-group-btn material-input">
+                        <a href="#" class="nav-link btn btn-secondary"><img src="icons/arrow.svg" alt="" /></a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+          </div>
+
+        </div><!-- modal-content -->
+      </div><!-- modal-dialog -->
+    </div><!-- modal -->
+
 	
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
