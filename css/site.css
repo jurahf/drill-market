@@ -410,5 +410,12 @@ ul.product-menu>li>a {
     }    
 }
 
+@media (max-width: 1024px) {
+    .margin-top-50-less-1024 {
+        margin-top: 50px;
+    }  
+}
+
+
 
 

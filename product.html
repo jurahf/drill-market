@@ -9,6 +9,8 @@
     <!-- Bootstrap -->  
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/site.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">    <!-- карусель -->
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
     <link href="css/sticky-filter.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/modal-slider.css"> <!-- для модального меню -->
 
@@ -81,8 +83,8 @@
     <div class="container margin-top-50">
       <div class="row">
 
-        <!-- картинки -->
-        <div class="col col-xs-7">
+        <!-- картинки - для большого экрана -->
+        <div class="col col-md-7 more-1024">
           <div class="row padding-left-10">
             <h6 class="nav-link">
               <img class="product-icon" src="icons/triangle.svg" alt="">
@@ -103,10 +105,25 @@
           </div>            
         </div>
 
-        <!-- описание -->
-        <div class="col col-xs-1"></div>
+        <!-- карусель - для маленького экрана -->
+        <div class="col col-xs-12 less-1024">
+          <section class="carousel-prod slider">
+            <div>
+              <img class="img-product-details" src="images/products/Figaro3000.png" />
+            </div>
+  
+            <div>
+              <img class="img-product-details" src="images/products/Figaro3000.png" />
+            </div>
+              
+            <div>
+              <img class="img-product-details" src="images/products/Figaro3000.png" />
+            </div>   
+          </section>
+        </div>        
 
-        <div class="col col-xs-4 sticky-filter">
+        <!-- описание -->
+        <div class="col col-xs-12 col-md-offset-1 col-md-4 sticky-filter margin-top-50-less-1024">
           <div class="row padding-left-10">
             <div class="col col-xs-12">
               <h1 class="product-name">Figaro 3000</h1>
@@ -311,8 +328,19 @@
 	
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js" type="text/javascript" charset="utf-8"></script>
 
     <script>
+
+      $(document).ready(function(){
+          $(".carousel-prod").slick({
+            slidesToShow: 1,          
+            dots: true,
+            arrows: false,
+            infinite: true,
+            swipeToSlide: true
+          });
+      });   
 
       // TODO: это все из базы тянуть
       function openInfo(infoType) {
