@@ -22,9 +22,9 @@
   <body>
     <!-- хедер -->
     <div class="container">
-        <div class="navbar header">
+        <div class="navbar header padding-right-15-less-640">
           <div class="row">
-              <div class="col col-xs-4 col-md-2">
+              <div class="col col-xs-6 col-sm-4 col-md-2">
                 <a href="./index.html">
                   <img class="logo" src="./icons/Logo.svg" alt="DRILL">
                 </a>      
@@ -48,19 +48,27 @@
                 </div>
               </div>
   
-              <!-- кнопка меню - для маленького экрана -->
-              <div class="col col-xs-offset-7 col-xs-1 col-sm-offset-0 col-sm-4 less-1024 text-center">
+              <!-- кнопка меню - для маленького экрана -->            
+              <div class="col col-xs-offset-7 col-xs-1 col-sm-offset-0 col-sm-4 less-1024 more-640 text-center">
                 <div class="row margin-top-10">
                   <a data-toggle="modal" data-target="#menuModal"><img src="./icons/burger.svg" alt="Menu" /></a>
                 </div>
               </div>         
+            
+  
+            <!-- а это для очень маленького -->
+            <div class="col col-xs-offset-5 col-xs-1 col-sm-offset-0 col-sm-4 text-center less-640">
+              <div class="row margin-top-10">
+                  <a data-toggle="modal" data-target="#menuModal"><img src="./icons/burger.svg" alt="Menu" /></a>
+              </div>
+            </div>          
   
               <div class="col col-xs-4 col-md-2 text-right padding-right-20 more-640">
                 <div class="row">
-                  <h6>+7 495 226-18-37</h6>
+                  <h6><a class="nav-link none-focus yellow-hover" href="tel:+7 495 226-18-37">+7 495 226-18-37</a></h6>
                 </div>
                 <div class="row">
-                  <h6 class="nav-link">info@drill-market.ru</h6>
+                  <h6><a class="nav-link none-focus yellow-hover" href="mailto:info@drill-market.ru">info@drill-market.ru</a></h6>
                 </div>
               </div>
           </div>
@@ -68,10 +76,10 @@
   
         <div class="row less-640">
           <div class="col col-xs-6">
-            <h6 class="nav-link">info@drill-market.ru</h6>
+            <h6><a class="nav-link none-focus yellow-hover" href="mailto:info@drill-market.ru">info@drill-market.ru</a></h6>
           </div>
           <div class="col col-xs-6 text-right">
-            <h6>+7 495 226-18-37</h6>
+            <h6><a class="nav-link none-focus yellow-hover" href="tel:+7 495 226-18-37">+7 495 226-18-37</a></h6>
           </div>        
         </div>
       </div>
@@ -81,7 +89,7 @@
     <div class="container margin-top-30">
       <div class="row">
         <!-- фильтры -->
-        <div class="col col-xs-3 sticky-filter more-1024">
+        <div class="col col-xs-2 sticky-filter more-1024">
           
           <div class="row margin-top-50 padding-left-10">
               <button class="none-hover none-focus filter-btn material-input btn btn-default dropdown-toggle" onclick="expandChange('work-combo-btn');" data-toggle="collapse" data-target="#collapseWork" aria-expanded="false" aria-controls="collapseWork">
@@ -128,20 +136,20 @@
         </div>
           
 
-        <div class="col col-xs-12 col-md-9">
+        <div class="col col-xs-12 col-md-offset-1 col-md-9">
           <!-- сетка с товарами -->
           <!-- TODO: Данные должны тянуться из базы - по параметрам адресной строки-->
           <div class="row margin-top-50">
             <div class="col col-xs-12 col-sm-6">
-              <a href="#1">
+              <a href="./product.html?id=1">
                 <img src="./images/products/Figaro3000.png" class="img-responsive img-product">
               </a>
               <div class="margin-top-30">
                 <a class="nav-link yellow-hover" href="./product.html?id=1">Figaro 3000</a>
               </div>
               <div class="with-label margin-top-12">
-                <a class="nav-link yellow-hover" href="#">Для струйной цементации</a>
-                <a class="separator">/</a>
+                <a class="nav-link yellow-hover more-1024" href="#">Для струйной цементации</a>
+                <a class="separator more-1024">/</a>
                 <a class="nav-link yellow-hover" href="#">буровые установки</a>
               </div>
               <div class="margin-top-12">
@@ -151,15 +159,15 @@
             
             <div class="col col-xs-12 col-sm-6 margin-top-50-less-640">
               <div class="pull-right-more-640">
-                <a href="#1">
+                <a href="./product.html?id=2">
                   <img src="./images/products/Figaro1000.png" class="img-responsive img-product">
                 </a>
                 <div class="margin-top-30">
                   <a class="nav-link yellow-hover" href="./product.html?id=2">Figaro 1000</a>
                 </div>
                 <div class="with-label margin-top-12">
-                  <a class="nav-link yellow-hover" href="#">Для струйной цементации</a>
-                  <a class="separator">/</a>
+                  <a class="nav-link yellow-hover more-1024" href="#">Для струйной цементации</a>
+                  <a class="separator more-1024">/</a>
                   <a class="nav-link yellow-hover" href="#">буровые установки</a>
                 </div>
                 <div class="margin-top-12">
@@ -172,15 +180,15 @@
           <!-- еще ряд -->
           <div class="row margin-top-100 margin-top-50-less-640">
             <div class="col col-xs-12 col-sm-6">
-              <a href="#1">
+              <a href="./product.html?id=3">
                 <img src="./images/products/Figaro400.png" class="img-responsive img-product">
               </a>
               <div class="margin-top-30">
                 <a class="nav-link yellow-hover" href="./product.html?id=3">Figaro 400</a>
               </div>
               <div class="with-label margin-top-12">
-                <a class="nav-link yellow-hover" href="#">Для струйной цементации</a>
-                <a class="separator">/</a>
+                <a class="nav-link yellow-hover more-1024" href="#">Для струйной цементации</a>
+                <a class="separator more-1024">/</a>
                 <a class="nav-link yellow-hover" href="#">буровые установки</a>
               </div>
               <div class="margin-top-12">
@@ -190,15 +198,15 @@
 
             <div class="col col-xs-12 col-sm-6">
                 <div class="pull-right-more-640 margin-top-50-less-640">
-              <a href="#1">
+              <a href="./product.html?id=4">
                 <img src="./images/products/FigaroLafette.png" class="img-responsive img-product">
               </a>
               <div class="margin-top-30">
                 <a class="nav-link yellow-hover" href="./product.html?id=4">Figaro Lafette</a>
               </div>
               <div class="with-label margin-top-12">
-                <a class="nav-link yellow-hover" href="#">Для струйной цементации</a>
-                <a class="separator">/</a>
+                <a class="nav-link yellow-hover more-1024" href="#">Для струйной цементации</a>
+                <a class="separator more-1024">/</a>
                 <a class="nav-link yellow-hover" href="#">буровые установки</a>
               </div>
               <div class="margin-top-12">
@@ -219,8 +227,8 @@
                   <a class="nav-link yellow-hover" href="#">Краткое наименование</a>
                 </div>
                 <div class="with-label margin-top-12">
-                  <a class="nav-link yellow-hover" href="#">Тип работ</a>
-                  <a class="separator">/</a>
+                  <a class="nav-link yellow-hover more-1024" href="#">Тип работ</a>
+                  <a class="separator more-1024">/</a>
                   <a class="nav-link yellow-hover" href="#">Тип оборудования</a>
                 </div>
                 <div class="margin-top-12">
@@ -233,23 +241,24 @@
               </div>            
           </div>
         -->
+          <div class="row margin-top-100"></div> <!-- растягиваем контейнер, чтобы кнопка с фильтрами крепилась ниже -->
         </div>
-      </div>        
+      </div>
     </div><!-- container -->
 
 
  
 
     <!-- футер -->
-    <div class="container margin-top-100">
+    <div class="container margin-bottom-50 margin-top-50">
         <div class="navbar footer">
   
           <div class="row less-640 margin-bottom-50">
             <div class="col col-xs-6">
-              <h6 class="nav-link">info@drill-market.ru</h6>
+              <h6><a class="nav-link none-focus yellow-hover" href="mailto:info@drill-market.ru">info@drill-market.ru</a></h6>
             </div>
             <div class="col col-xs-6 text-right">
-              <h6>+7 495 226-18-37</h6>
+              <h6><a class="nav-link none-focus yellow-hover" href="tel:+7 495 226-18-37">+7 495 226-18-37</a></h6>
             </div>        
           </div>
   
@@ -277,10 +286,10 @@
   
             <div class="col col-xs-4 col-md-offset-5 col-md-2 text-right padding-right-20 more-640">
               <div class="row">
-                <h6>+7 495 226-18-37</h6>
+                <h6><a class="nav-link none-focus yellow-hover" href="tel:+7 495 226-18-37">+7 495 226-18-37</a></h6>
               </div>
               <div class="row">
-                <h6 class="nav-link">info@drill-market.ru</h6>
+                <h6><a class="nav-link none-focus yellow-hover" href="mailto:info@drill-market.ru">info@drill-market.ru</a></h6>
               </div>
             </div>
           </div>
@@ -295,11 +304,13 @@
           </div>
   
         </div>
+  
+        <div class="row margin-bottom-20 less-1024"></div>
       </div>
     
     
-      <!-- Menu Modal -->
-      <div class="modal left fade" id="menuModal" tabindex="-1" role="dialog" aria-labelledby="menuModalLabel">
+    <!-- Modal -->
+    <div class="modal left fade" id="menuModal" tabindex="-1" role="dialog" aria-labelledby="menuModalLabel">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             
@@ -319,10 +330,10 @@
   
                 <div class="col col-sm-4 text-right padding-right-20 more-640">
                   <div class="row">
-                    <h6>+7 495 226-18-37</h6>
+                    <h6><a class="nav-link none-focus yellow-hover" href="tel:+7 495 226-18-37">+7 495 226-18-37</a></h6>
                   </div>
                   <div class="row">
-                    <h6 class="nav-link">info@drill-market.ru</h6>
+                    <h6><a class="nav-link none-focus yellow-hover" href="mailto:info@drill-market.ru">info@drill-market.ru</a></h6>
                   </div>
                 </div>              
   
@@ -330,10 +341,10 @@
   
               <div class="row less-640">
                 <div class="col col-xs-6">
-                  <h6 class="nav-link">info@drill-market.ru</h6>
+                  <h6><a class="nav-link none-focus yellow-hover" href="mailto:info@drill-market.ru">info@drill-market.ru</a></h6>
                 </div>
                 <div class="col col-xs-6 text-right">
-                  <h6>+7 495 226-18-37</h6>
+                  <h6><a class="nav-link none-focus yellow-hover" href="tel:+7 495 226-18-37">+7 495 226-18-37</a></h6>
                 </div>        
               </div>
             </div>
@@ -347,6 +358,7 @@
                   <h1 class="margin-top-50"><a class="none yellow-hover" href="./section.html?tool=1">Буровые установки</a></h1>
                   <h1 class="margin-top-30"><a class="none yellow-hover" href="./section.html?tool=2">Насосы</a></h1>
                   <h1 class="margin-top-30"><a class="none yellow-hover" href="./section.html?tool=3">Миксерные станции</a></h1>
+                  <h1 class="margin-top-30"><a class="none yellow-hover" href="./section.html?tool=4">Сопутствующее оборудование</a></h1>
               </div>
             </div>
   
@@ -359,6 +371,7 @@
                   <h4 class="margin-top-40"><a class="none yellow-hover" href="./section.html?tool=1">Буровые установки</a></h4>
                   <h4 class="margin-top-20"><a class="none yellow-hover" href="./section.html?tool=2">Насосы</a></h4>
                   <h4 class="margin-top-20"><a class="none yellow-hover" href="./section.html?tool=3">Миксерные станции</a></h4>
+                  <h4 class="margin-top-20"><a class="none yellow-hover" href="./section.html?tool=4">Сопутствующее оборудование</a></h4>                
                 </div>
               </div>
             </div>

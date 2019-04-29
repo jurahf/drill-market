@@ -24,9 +24,9 @@
   <body>
     <!-- хедер -->
     <div class="container">
-      <div class="navbar header">
+      <div class="navbar header padding-right-15-less-640">
         <div class="row">
-            <div class="col col-xs-4 col-md-2">
+            <div class="col col-xs-6 col-sm-4 col-md-2">
               <a href="./index.html">
                 <img class="logo" src="./icons/Logo.svg" alt="DRILL">
               </a>      
@@ -50,19 +50,27 @@
               </div>
             </div>
 
-            <!-- кнопка меню - для маленького экрана -->
-            <div class="col col-xs-offset-7 col-xs-1 col-sm-offset-0 col-sm-4 less-1024 text-center">
+            <!-- кнопка меню - для маленького экрана -->            
+            <div class="col col-xs-offset-7 col-xs-1 col-sm-offset-0 col-sm-4 less-1024 more-640 text-center">
               <div class="row margin-top-10">
                 <a data-toggle="modal" data-target="#menuModal"><img src="./icons/burger.svg" alt="Menu" /></a>
               </div>
             </div>         
+          
+
+          <!-- а это для очень маленького -->
+          <div class="col col-xs-offset-5 col-xs-1 col-sm-offset-0 col-sm-4 text-center less-640">
+            <div class="row margin-top-10">
+                <a data-toggle="modal" data-target="#menuModal"><img src="./icons/burger.svg" alt="Menu" /></a>
+            </div>
+          </div>          
 
             <div class="col col-xs-4 col-md-2 text-right padding-right-20 more-640">
               <div class="row">
-                <h6>+7 495 226-18-37</h6>
+                <h6><a class="nav-link none-focus yellow-hover" href="tel:+7 495 226-18-37">+7 495 226-18-37</a></h6>
               </div>
               <div class="row">
-                <h6 class="nav-link">info@drill-market.ru</h6>
+                <h6><a class="nav-link none-focus yellow-hover" href="mailto:info@drill-market.ru">info@drill-market.ru</a></h6>
               </div>
             </div>
         </div>
@@ -70,10 +78,10 @@
 
       <div class="row less-640">
         <div class="col col-xs-6">
-          <h6 class="nav-link">info@drill-market.ru</h6>
+          <h6><a class="nav-link none-focus yellow-hover" href="mailto:info@drill-market.ru">info@drill-market.ru</a></h6>
         </div>
         <div class="col col-xs-6 text-right">
-          <h6>+7 495 226-18-37</h6>
+          <h6><a class="nav-link none-focus yellow-hover" href="tel:+7 495 226-18-37">+7 495 226-18-37</a></h6>
         </div>        
       </div>
     </div>
@@ -83,12 +91,12 @@
     <div class="container">
       <div class="row">
         <div class="col col-xs-12">
-          <h1>Продажа подержаного бурового оборудования</h1>
+          <h1 class="font-24-less-640">Продажа подержаного бурового оборудования</h1>
         </div>
       </div>
       <div class="row">
         <div class="col col-xs-12">
-          <img class="img-main margin-top-30" src="./images/photo-main.jpg" alt="">
+          <img class="img-main margin-top-30 lol" src="./images/photo-main.jpg" alt="">
         </div>
       </div>      
     </div>
@@ -111,7 +119,7 @@
             <div class="row margin-top-50">
               <div class="col col-xs-12 col-md-6">
                 <h3 class="margin-top-0">Оборудование</h3>
-                <h1 class="margin-top-10">для&nbsp;струйной<br/>цементации</h1>
+                <h1 class="margin-top-10"><a class="none-focus yellow-hover" href="./section.html?work=1">для&nbsp;струйной<br/>цементации</a></h1>
               </div>
             </div>
 
@@ -149,7 +157,7 @@
             <div class="row margin-top-50">
               <div class="col col-xs-12 col-md-6">
                 <h3 class="margin-top-0">Оборудование</h3>
-                <h1 class="margin-top-10">для&nbsp;установки<br/>анкеров</h1>            
+                <h1 class="margin-top-10"><a class="none-focus yellow-hover" href="./section.html?work=2">для&nbsp;установки<br/>анкеров</a></h1>            
               </div>
             </div>
 
@@ -187,12 +195,12 @@
           <h1>Недавно добавленные</h1>
         </div>
 
-        <div class="col col-xs-12 col-md-9">
-          <section class="variable slider">
+        <div class="col col-xs-12 col-md-offset-1 col-md-8">
 
+          <section class="carousel-main slider margin-top-40-less-1024 more-640">
             <div>
-              <a href="#1">
-                <img src="./images/products/Figaro3000.png" class="img-responsive img-product">
+              <a href="./product.html?id=1">
+                <img src="./images/products/Figaro3000.png" class="img-responsive img-carousel">
               </a>
               <div class="margin-top-40">
                 <a class="nav-link yellow-hover" href="./product.html?id=1">Figaro 3000</a>
@@ -208,8 +216,8 @@
             </div>
 
             <div>
-              <a href="#1">
-                <img src="./images/products/Figaro1000.png" class="img-responsive img-product">
+              <a href="./product.html?id=2">
+                <img src="./images/products/Figaro1000.png" class="img-responsive img-carousel">
               </a>
               <div class="margin-top-40">
                 <a class="nav-link yellow-hover" href="./product.html?id=2">Figaro 1000</a>
@@ -225,8 +233,8 @@
             </div>
 
             <div>
-              <a href="#1">
-                <img src="./images/products/Figaro400.png" class="img-responsive img-product">
+              <a href="./product.html?id=3">
+                <img src="./images/products/Figaro400.png" class="img-responsive img-carousel">
               </a>
               <div class="margin-top-40">
                 <a class="nav-link yellow-hover" href="./product.html?id=3">Figaro 400</a>
@@ -244,7 +252,7 @@
             <!--
             <div>
               <a href="#1">
-                <img src="http://placehold.it/300/8bc34a/000000" class="img-responsive img-product">
+                <img src="http://placehold.it/300/8bc34a/000000" class="img-responsive img-carousel">
               </a>
               <div class="margin-top-40">
                 <a class="nav-link yellow-hover" href="#">Краткое наименование</a>
@@ -260,6 +268,63 @@
             </div>
             -->
           </section>
+
+          <!-- вторая карусель - с другими настройками для маленького экрана -->
+          <section class="carousel-little slider margin-top-40-less-1024 less-640">
+              <div>
+                <a href="#1">
+                  <img src="./images/products/Figaro3000.png" class="img-responsive img-carousel">
+                </a>
+                <div class="margin-top-40">
+                  <a class="nav-link yellow-hover" href="./product.html?id=1">Figaro 3000</a>
+                </div>
+                <div class="with-label margin-top-12">
+                  <a class="nav-link yellow-hover" href="#">Для струйной цементации</a>
+                  <a class="separator">/</a>
+                  <a class="nav-link yellow-hover" href="#">буровые установки</a>
+                </div>
+                <div class="margin-top-12">
+                  <a class="separator" href="#">170 000 €</a>
+                </div>
+              </div>
+  
+              <div>
+                <a href="#1">
+                  <img src="./images/products/Figaro1000.png" class="img-responsive img-carousel">
+                </a>
+                <div class="margin-top-40">
+                  <a class="nav-link yellow-hover" href="./product.html?id=2">Figaro 1000</a>
+                </div>
+                <div class="with-label margin-top-12">
+                  <a class="nav-link yellow-hover" href="#">Для струйной цементации</a>
+                  <a class="separator">/</a>
+                  <a class="nav-link yellow-hover" href="#">буровые установки</a>
+                </div>
+                <div class="margin-top-12">
+                  <a class="separator" href="#">120 000 €</a>
+                </div>
+              </div>
+  
+              <div>
+                <a href="#1">
+                  <img src="./images/products/Figaro400.png" class="img-responsive img-carousel">
+                </a>
+                <div class="margin-top-40">
+                  <a class="nav-link yellow-hover" href="./product.html?id=3">Figaro 400</a>
+                </div>
+                <div class="with-label margin-top-12">
+                  <a class="nav-link yellow-hover" href="#">Для струйной цементации</a>
+                  <a class="separator">/</a>
+                  <a class="nav-link yellow-hover" href="#">буровые установки</a>
+                </div>
+                <div class="margin-top-12">
+                  <a class="separator" href="#">3 000 000 руб</a>
+                </div>
+              </div>
+            </section>
+
+
+
         </div>
       </div>
     </div>
@@ -267,15 +332,15 @@
 
 
     <!-- футер -->
-    <div class="container margin-top-100">
+    <div class="container margin-bottom-50 margin-top-100">
       <div class="navbar footer">
 
         <div class="row less-640 margin-bottom-50">
           <div class="col col-xs-6">
-            <h6 class="nav-link">info@drill-market.ru</h6>
+            <h6><a class="nav-link none-focus yellow-hover" href="mailto:info@drill-market.ru">info@drill-market.ru</a></h6>
           </div>
           <div class="col col-xs-6 text-right">
-            <h6>+7 495 226-18-37</h6>
+            <h6><a class="nav-link none-focus yellow-hover" href="tel:+7 495 226-18-37">+7 495 226-18-37</a></h6>
           </div>        
         </div>
 
@@ -303,10 +368,10 @@
 
           <div class="col col-xs-4 col-md-offset-5 col-md-2 text-right padding-right-20 more-640">
             <div class="row">
-              <h6>+7 495 226-18-37</h6>
+              <h6><a class="nav-link none-focus yellow-hover" href="tel:+7 495 226-18-37">+7 495 226-18-37</a></h6>
             </div>
             <div class="row">
-              <h6 class="nav-link">info@drill-market.ru</h6>
+              <h6><a class="nav-link none-focus yellow-hover" href="mailto:info@drill-market.ru">info@drill-market.ru</a></h6>
             </div>
           </div>
         </div>
@@ -321,6 +386,8 @@
         </div>
 
       </div>
+
+      <div class="row margin-bottom-20 less-1024"></div>
     </div>
 	
   
@@ -345,10 +412,10 @@
 
               <div class="col col-sm-4 text-right padding-right-20 more-640">
                 <div class="row">
-                  <h6>+7 495 226-18-37</h6>
+                  <h6><a class="nav-link none-focus yellow-hover" href="tel:+7 495 226-18-37">+7 495 226-18-37</a></h6>
                 </div>
                 <div class="row">
-                  <h6 class="nav-link">info@drill-market.ru</h6>
+                  <h6><a class="nav-link none-focus yellow-hover" href="mailto:info@drill-market.ru">info@drill-market.ru</a></h6>
                 </div>
               </div>              
 
@@ -356,10 +423,10 @@
 
             <div class="row less-640">
               <div class="col col-xs-6">
-                <h6 class="nav-link">info@drill-market.ru</h6>
+                <h6><a class="nav-link none-focus yellow-hover" href="mailto:info@drill-market.ru">info@drill-market.ru</a></h6>
               </div>
               <div class="col col-xs-6 text-right">
-                <h6>+7 495 226-18-37</h6>
+                <h6><a class="nav-link none-focus yellow-hover" href="tel:+7 495 226-18-37">+7 495 226-18-37</a></h6>
               </div>        
             </div>
           </div>
@@ -373,6 +440,7 @@
                 <h1 class="margin-top-50"><a class="none yellow-hover" href="./section.html?tool=1">Буровые установки</a></h1>
                 <h1 class="margin-top-30"><a class="none yellow-hover" href="./section.html?tool=2">Насосы</a></h1>
                 <h1 class="margin-top-30"><a class="none yellow-hover" href="./section.html?tool=3">Миксерные станции</a></h1>
+                <h1 class="margin-top-30"><a class="none yellow-hover" href="./section.html?tool=4">Сопутствующее оборудование</a></h1>
             </div>
           </div>
 
@@ -385,6 +453,7 @@
                 <h4 class="margin-top-40"><a class="none yellow-hover" href="./section.html?tool=1">Буровые установки</a></h4>
                 <h4 class="margin-top-20"><a class="none yellow-hover" href="./section.html?tool=2">Насосы</a></h4>
                 <h4 class="margin-top-20"><a class="none yellow-hover" href="./section.html?tool=3">Миксерные станции</a></h4>
+                <h4 class="margin-top-20"><a class="none yellow-hover" href="./section.html?tool=4">Сопутствующее оборудование</a></h4>                
               </div>
             </div>
           </div>
@@ -422,7 +491,7 @@
     
     <script>
       $(document).ready(function(){
-          $(".variable").slick({
+          $(".carousel-main").slick({
             slidesToShow: 2,
             slidesToScroll: 1,            
             dots: false,
@@ -431,6 +500,19 @@
             variableWidth: true,
             swipeToSlide: true
           });
+
+
+          $(".carousel-little").slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,            
+            dots: true,
+            arrows: false,
+            infinite: true,
+            variableWidth: false,
+            swipeToSlide: true
+          });
+
+          
       });   
     </script>
   </body>
