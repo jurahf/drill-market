@@ -58,7 +58,7 @@
     border: none;
 }
 
-.modal-header {
+.site-modal-header {
     border-bottom: solid black 1px;
     border-radius: 0px;
     height: 100px;
@@ -71,9 +71,10 @@
     border-radius: 0px;
     height: 100px;
     padding-top: 20px;
-    position: fixed;
+    /*position: fixed;*/
     bottom: 0px;
     margin-bottom: 30px;
+    margin-top: 50px;
 }
 
 
